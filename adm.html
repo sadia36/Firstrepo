@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBlzlrMEGpyR9qbbpOUS-qlzYtvEoVzjZA",
+    authDomain: "my-db-project-a0d9a.firebaseapp.com",
+    projectId: "my-db-project-a0d9a",
+    storageBucket: "my-db-project-a0d9a.appspot.com",
+    messagingSenderId: "989574216864",
+    appId: "1:989574216864:web:e00dcef46586f6629e1dc5",
+    measurementId: "G-K2KVLNHJXY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ // firebase.analytics();
+</script>
+    <script src="adm.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Truk Computer Institute</h1>
+    <h2> Admission Form </h2>
+    <p>
+
+        <label class="space" for="">Roll No:-</label>
+
+        <input class="cpad" type="text" id="txtRollno" name="" placeholder="Enter Roll No">
+    </p>
+    <P>
+        <label for="">Student Name</label>
+        <input type="text" name="" id="txtName" placeholder="First Name">
+    </P>
+    <p>
+        <label for=""> Father Name </label>
+        <input type="text" name="" id="txtFname" placeholder="Last Name">
+    </p>
+    <p>
+        <label for="">CNIC</label>
+        <input type="text" name="" id="txtCNIC" placeholder="First Name">
+
+    </p>
+    <p>
+        <label for=""> Date of Birth</label>
+        <input type="date" name="" id="">
+
+    </p>
+
+    <p>
+        <label for=""> Gender </label>
+        <input type="radio" checked="checked" name="gender" id="" onclick="funcMale()">
+        <label for=""> Male</label>
+        <input type="radio" name="gender" id="" onclick="funcFemale()">
+        <label for=" "> Female</label>
+    <p>
+        <label for=""> Domicile</label>
+        <input type="radio" checked="checked" name="domicile" id="" onclick="funcRural()">
+        <label for=""> Rural</label>
+        <input type="radio" name="domicile" id="" onclick="funcurban()">
+        <label for=" "> Urban</label>
+
+
+    </p>
+    </p>
+    <p>
+        <label for=""> Education Level</label>
+        <input type="radio" checked="checked" name="education level" id="" onclick="funcMatric()">
+        <label for=""> Matric</label>
+        <input type="radio" name="education level" id="" onclick="funcInter()">
+        <label for=" "> Inter</label>
+        <label for="">Gradution</label>
+        <input type="radio" name="education level" id="" onclick="funcGradution">
+
+
+    </p>
+
+
+
+    <p>
+        <label for=""> City</label>
+        <select name="" id="ddlcity">
+            <option>---Select City---</option>
+            <option value="K">Karachi</option>
+            <option value="L">Lahore</option>
+            <option value="I"> Islamabad</option>
+
+        </select>
+    </p>
+    <p>
+        <label for="">nothing</label>
+      <select name="" id="">Select </select>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+
+    </p>
+    <p>
+        <label for=""> Education</label>
+        <br>
+        <input type="checkbox" name="" id="chkBoxSSCS">
+        <label for=""> SSC (Science)</label>
+        <br>
+        <input type="checkbox" name="" id="chkBoxSSCG">
+        <label for=""> SSC (General)</label>
+        <br>
+        <input type="checkbox" name="" id="chkBoxSSCC">
+        <label for=""> SSC (Computer)</label>
+        <br>
+        <input type="checkbox" name="" id="chkBoxHSCP.E">
+        <label for=""> HSC(P.E) </label>
+        <br>
+        <input type="checkbox" name="" id="chkBoxHSCM.E">
+        <label for=""> HSC(M.E)</label>
+    </p>
+    <P>
+        <input type="submit" value="Submit" onclick="submit()">
+    </P>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+h1{ background-color: rgb(53, 40, 40);
+color: chocolate;
+text-align: right;
+padding-top: 5px;
+margin-left: 10px;
+font-style: italic;
+border-style: dotted;
+}
+.h1class{
+    color: rgb(146, 29, 146);
+    font-weight: bold;
+}
+#h1id{
+    margin-left: 50px;
+    color: yellowgreen;
+    border-style: dashed;
+}
